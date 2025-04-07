@@ -8,6 +8,7 @@ import ViewEstimateComponent from "./components/ViewEstimateComponent";
 import { overrideHooks, updateCustomConfigs } from "./utils";
 import AdditionalComponentWrapper from "./components/AdditionalComponent";
 import SampleMultiComponent from "./components/SampleMultiComponent";
+import SampleCardAaryan from "./components/SampleCardAaryan";
 
 // SampleModule component manages the initialization and rendering of the module
 export const SampleModule = ({ stateCode, userType, tenants }) => {
@@ -42,6 +43,7 @@ export const SampleModule = ({ stateCode, userType, tenants }) => {
 // Register components to be used in DIGIT's Component Registry
 const componentsToRegister = {
   SampleModule,
+  SampleCardAaryan,
   SampleCard,
   HRMSCard,
   ViewEstimatePage: ViewEstimateComponent,

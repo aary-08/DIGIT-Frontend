@@ -24,6 +24,9 @@ import SampleCreate from "./uiComponentsSample/SampleCreate";
 import SampleSearch from "./uiComponentsSample/SampleSearch";
 import SampleInbox from "./uiComponentsSample/SampleInbox";
 import SampleView from "./uiComponentsSample/SampleView";
+import SSCreate from "../mypage/firstpage";
+import MyCreateConfigPage from "../mypage/myCreateConfigPage";
+import ApplyConfigPage from "../mypage/ApplyConfigPage";
 
 const SampleBreadCrumbs = ({ location }) => {
   const { t } = useTranslation();
@@ -60,14 +63,17 @@ const App = ({ path, stateCode, userType, tenants }) => {
         <PrivateRoute path={`${path}/response`} component={() => <Response></Response>} />
 
         <PrivateRoute path={`${path}/sample-create`} component={() => <Create></Create>} />
-        <PrivateRoute path={`${path}/sample-search`} component={() => <SearchWageSeeker></SearchWageSeeker>} />    
-        <PrivateRoute path={`${path}/sample-view`} component={() =>  <ViewIndividual />} />
+        <PrivateRoute path={`${path}/sample-search`} component={() => <SearchWageSeeker></SearchWageSeeker>} />
+        <PrivateRoute path={`${path}/sample-view`} component={() => <ViewIndividual />} />
         <PrivateRoute path={`${path}/sample-components`} component={() => <SampleComponents />} />
         <PrivateRoute path={`${path}/sample-success`} component={() => <PanelCardResponse />} />
         <PrivateRoute path={`${path}/tab-search-individual`} component={() => <TabIndividualSearch />} />
         <PrivateRoute path={`${path}/advanced`} component={() => <AdvancedCreate></AdvancedCreate>} />
         <PrivateRoute path={`${path}/inbox`} component={() => <Inbox></Inbox>} />
         {/* <PrivateRoute path={`${path}/view`} component={() => <View />} /> */}
+        <PrivateRoute path={`${path}/firstpage`} component={() => <SSCreate></SSCreate>} />
+        <PrivateRoute path={`${path}/myCreateConfigPage`} component={() => <MyCreateConfigPage></MyCreateConfigPage>} />
+        <PrivateRoute path={`${path}/ApplyConfigPage`} component={() => <ApplyConfigPage />} />
 
         <PrivateRoute path={`${path}/components`} component={() => <SampleComponentsNew />} />
         <PrivateRoute path={`${path}/create`} component={() => <SampleCreate />} />
