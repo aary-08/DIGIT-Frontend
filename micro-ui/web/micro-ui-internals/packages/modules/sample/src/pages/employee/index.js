@@ -73,7 +73,7 @@ const App = ({ path, stateCode, userType, tenants }) => {
         {/* <PrivateRoute path={`${path}/view`} component={() => <View />} /> */}
         <PrivateRoute path={`${path}/firstpage`} component={() => <SSCreate></SSCreate>} />
         <PrivateRoute path={`${path}/myCreateConfigPage`} component={() => <MyCreateConfigPage></MyCreateConfigPage>} />
-        <PrivateRoute path={`${path}/ApplyConfigPage`} component={() => <ApplyConfigPage />} />
+        <PrivateRoute path={`${path}/Create_Form`} component={() => <ApplyConfigPage />} />
 
         <PrivateRoute path={`${path}/components`} component={() => <SampleComponentsNew />} />
         <PrivateRoute path={`${path}/create`} component={() => <SampleCreate />} />

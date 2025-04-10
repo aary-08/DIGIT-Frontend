@@ -3,32 +3,25 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 const SampleCard = () => {
- 
   const { t } = useTranslation();
 
   const propsForModuleCard = {
     Icon: "BeenHere",
     moduleName: t("Sample"),
-    kpis: [
-
-    ],
+    kpis: [],
     links: [
-   
-     
       {
         label: t("Individual Create"),
         link: `/${window?.contextPath}/employee/sample/individual-create`,
       },
-  
+
       {
         label: t("Individual Search"),
         link: `/${window?.contextPath}/employee/sample/individual-search`,
-
       },
       {
         label: t("Individual View"),
         link: `/${window?.contextPath}/employee/sample/individual-view??tenantId=pg.citya&estimateNumber=ES/2023-24/002390&projectNumber=PJ/2023-24/02/002830`,
-
       },
       // {
       //   label: t("Individual View Details"),
@@ -69,6 +62,10 @@ const SampleCard = () => {
       {
         label: t("View"),
         link: `/${window?.contextPath}/employee/sample/view`,
+      },
+      {
+        label: t("New Registration"),
+        link: `/${window?.contextPath}/employee/sample/Create_Form`,
       },
     ],
   };
